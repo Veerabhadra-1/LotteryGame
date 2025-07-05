@@ -1,0 +1,14 @@
+#root {
+  margin: 0 auto;
+  text-align: center;
+  background-image: url("/lt3img.avif");
+  background-size: cover;         
+  background-position: center;    
+  background-repeat: no-repeat;   
+  min-height: 99vh; 
+  min-width: 150vh; 
+  border-radius: 14px;   
+  border:1px solid black;
+}
+
+
