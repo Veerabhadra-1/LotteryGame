@@ -8,10 +8,11 @@ function App() {
   //   return sum(ticket)===15;
   //  }
 
-  //condition for all numbers of ticket to be same
-  let winCondition=(ticket)=>{
-    return ticket.every((num)=> num === ticket[0]);
-   }
+  //condition for sum of numbers on ticket is 15
+  const winCondition = (ticket) => {
+  const total = ticket.reduce((sum, num) => sum + num, 0);
+  return total === 15;
+};
 
   return (
     <>

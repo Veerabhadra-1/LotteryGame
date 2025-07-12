@@ -1,18 +1,46 @@
+/* Full-screen background for the entire page */
+body {
+ 
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Responsive app container */
 #root {
-  margin: 0 auto;
-  text-align: center;
-  background-size: cover;         
-  background-position: center;    
-  background-repeat: no-repeat;   
-  min-height: 99vh; 
-  min-width: 150vh; 
-  border-radius: 14px;   
-  border:1px solid black;
-  background-image: url("lt3img.avif");
+   background-image: url("lt3img.avif");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  width: 90%;                      /* Responsive width on small screens */
+  max-width: 500px;                /* Limits width on large screens */
+  min-height: 90vh;                /* Adjusts height to mostly fill the screen */
+  padding: 1.5rem;                 /* Inner spacing */
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.85); /* Slight white background for readability */
+  border-radius: 14px;             /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);   /* Soft shadow */
+  background-size: cover;         
+  background-position: center;    
+  background-repeat: no-repeat;
 }
 
+/* Medium screen (tablet) adjustments */
+@media (min-width: 768px) {
+  #root {
+    max-width: 600px;
+    padding: 2rem;
+  }
+}
+
+/* Large screen (desktop) adjustments */
+@media (min-width: 1024px) {
+  #root {
+    max-width: 700px;
+    padding: 2.5rem;
+  }
+}
 
 
