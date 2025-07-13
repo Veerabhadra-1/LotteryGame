@@ -18,10 +18,10 @@ body::-webkit-scrollbar {
 }
 
 #root {
-  width: 100%;
-  max-width: 75vw;
-  height: 75vh;             
-  padding: 0.5rem;           
+  width: 90%;
+  max-width: 500px;
+  height: 100vh;             
+  padding: 1.544rem;           
   text-align:center;
   background-color:bisque;
   border-radius: 14px;
@@ -31,7 +31,7 @@ body::-webkit-scrollbar {
 
 
 @media (max-width: 576px) {
-  body {
+  html, body {
     height: auto;
     display: block;
   }
