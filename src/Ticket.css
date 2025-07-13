@@ -3,10 +3,8 @@
     border:1px solid black;
     box-shadow:8px 8px 8px black;
     border-radius:18px;
-    /* margin-bottom:5px; */
     background-image:url("/tktbg.jpg");
     background-position: center;
-    width:460px;
-    height:235px;
-    
-}
+    width:400px;
+    height:180px;  
+       }
