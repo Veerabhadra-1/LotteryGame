@@ -44,7 +44,7 @@ export default function Lottery({ n, winCondition }) {
 
   return (
     <>
-      <h1 style={{color:"black",fontSize:"40px",fontFamily:"Cambria, Cochin, Georgia, Times, 'Times New Roman', serif",fontWeight:"bold"}}>Lottery Game</h1>
+      <h3 style={{color:"black",fontSize:"30px",fontFamily:"Cambria, Cochin, Georgia, Times, 'Times New Roman', serif",fontWeight:"bold"}}>Lottery Game</h3>
       <div className="timer">
         Time Left: {timeLeft} second{(timeLeft !== 1 || timeLeft !== 0 )? "s" : ""}
       </div>
@@ -81,7 +81,7 @@ export default function Lottery({ n, winCondition }) {
               <RestartAltIcon style={{ fontSize: "21px" }} />
             </span>
           )}
-           <Button variant="contained" color="error" startIcon={ <RestartAltIcon />}onClick={restartGame} style={{marginTop:"60px",boxShadow: "6px 6px 6px black"}}>
+           <Button variant="contained" color="error" startIcon={ <RestartAltIcon />}onClick={restartGame} style={{marginTop:"25px",boxShadow: "6px 6px 6px black"}}>
             Restart Game
           </Button>
         </div>

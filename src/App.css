@@ -8,6 +8,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color:deepskyblue;
 }
 
 html::-webkit-scrollbar, 
@@ -17,16 +18,12 @@ body::-webkit-scrollbar {
 }
 
 #root {
-  background-image: url("lt3img.avif");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  width: 90%;
-  max-width: 500px;
-  height: 92.664vh;             
-  padding: 1.544rem;           
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.85);
+  width: 100%;
+  max-width: 75vw;
+  height: 75vh;             
+  padding: 0.5rem;           
+  text-align:center;
+  background-color:bisque;
   border-radius: 14px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -34,7 +31,7 @@ body::-webkit-scrollbar {
 
 
 @media (max-width: 576px) {
-  html, body {
+  body {
     height: auto;
     display: block;
   }
